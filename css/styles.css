@@ -62,7 +62,7 @@ body {
 }
 
 .logo-header {
-        font-weight: 700;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     word-spacing: -1ch;
@@ -122,7 +122,29 @@ body {
     display: flex;
     margin-left: -50px;
 }
-.address .item {
+
+.address-item::before {
+    display: inline-flex;
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+    align-items: stretch;
+    border: 1px solid red;
+}
+
+.mail::before {
+    background-image: url(../images/svg/envelope.svg);
+}
+
+.tell::before {
+    background-image: url(../images/svg/smartphone.svg);
+}
+
+.address-item {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -132,15 +154,8 @@ body {
     margin-left: 50px;
 }
 
-
-
 h2, h3 {
     color: var(--title-text-color);
-}
-
-.studio-footer {
-    color: var(--primary-white-color);
-    word-spacing: -1ch;
 }
 
 a:hover,
@@ -181,7 +196,7 @@ footer {
     margin-bottom: 9px;
 }
 
-.mail {
+.footer-mail {
     margin-bottom: 9px;
 }
 
@@ -194,6 +209,10 @@ footer {
     word-spacing: -1ch;
 }
 
+.studio-footer {
+    color: var(--primary-white-color);
+    word-spacing: -1ch;
+}
 
 .curent {
     color: var(--accent-color);
