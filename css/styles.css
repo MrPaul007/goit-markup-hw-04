@@ -123,27 +123,6 @@ body {
     margin-left: -50px;
 }
 
-.address-item::before {
-    display: inline-flex;
-    content: "";
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 16px;
-    width: 16px;
-    margin-right: 10px;
-    align-items: stretch;
-    border: 1px solid red;
-}
-
-.mail::before {
-    background-image: url(../images/svg/envelope.svg);
-}
-
-.tell::before {
-    background-image: url(../images/svg/smartphone.svg);
-}
-
 .address-item {
     color: var(--primary-text-color);
     font-weight: 500;
