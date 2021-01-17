@@ -12,6 +12,10 @@ body {
     margin: 0;
 }
 
+.main {
+    padding: 94px 0;
+}
+
 .main h1 {
     color: var(--primary-white-color);
     margin-top: 0;
