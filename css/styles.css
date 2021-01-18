@@ -1,14 +1,14 @@
 html {
     box-sizing: border-box;
-  }
+}
   
-  *,
-  *::before,
-  *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
-  }
+}
   
-  .visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -19,17 +19,17 @@ html {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
-  h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
-  }
+}
 
-  img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
-  }
+}
 
 :root {
     --primary-text-color:#757575;
@@ -37,7 +37,8 @@ html {
     --accent-color:#2196F3;    ;
     --primary-white-color:#ffffff;
     --background-section-color:#2F303A;
-  }
+    --icon-color: #AFB1B8;
+}
 
 
 body {
@@ -62,7 +63,7 @@ body {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0)
-  }
+}
 
 /* ===================== HEADER ===================== */
 
@@ -82,7 +83,6 @@ body {
     font-family: raleway, sans-serif;
     text-decoration: none;
     margin-right: 94px;
-    
 }
 
 .logo-web {
@@ -154,6 +154,10 @@ body {
     display: inline-flex;
 }
 
+.address-item:hover svg {
+    fill: var(--accent-color);
+}
+
 h2, h3 {
     color: var(--title-text-color);
 }
@@ -168,6 +172,7 @@ button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
+
 footer {
     background: var(--background-section-color);
 }
@@ -215,15 +220,11 @@ footer {
     word-spacing: -1ch;
 }
 
-.footer-link {
+.link-container {
     margin-left: 70px;
 }
 
-.footer-link .social-frame {
-    background-color: ;
-}
-
-.footer-link h2 {
+.link-container h2 {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -231,15 +232,29 @@ footer {
     color: var(--primary-white-color);
 }
 
+
 .footer-socials {
     display: flex;
     
 }
 
-.footer-socials .social-frame {
+.footer-socials .social-frame-footer {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 11px 11px;
+    margin-right: 10px; 
     background: rgba(255, 255, 255, 0.1);
 }
 
+.social-frame-footer:hover {
+        background-color: var(--accent-color);
+}
+
+.social-frame-link .social-icon {
+    fill: var(--primary-white-color);
+} 
 
 .curent {
     color: var(--accent-color);
