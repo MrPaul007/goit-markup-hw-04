@@ -248,7 +248,8 @@ footer {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.social-frame-footer:hover {
+.social-frame-footer:hover,
+.social-frame-footer:focus {
         background-color: var(--accent-color);
 }
 

@@ -192,7 +192,8 @@ h1 {
     fill: var(--icon-color);
     }
 
-.socials .item:hover {
+.socials .item:hover,
+.socials .item:focus {
     background-color: var(--accent-color);
 }
 
@@ -256,6 +257,8 @@ h1 {
     fill: var(--accent-color);
 }
 
-.clients-list .item:hover {
+.clients-list .item:hover,
+.clients-list .item:focus {
     border-color: var(--accent-color);
 }
+
