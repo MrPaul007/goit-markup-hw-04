@@ -44,11 +44,15 @@ h1 {
 
 .hero {
     color: var(--primary-white-color);
+    background-color: #c4c4c4;
     text-align: center;
     max-width: 1600px;
-    background-image: url(../images/background-img.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+         url(../images/background-img.jpg);
     margin: 0 auto;
-    padding: 200px 200px;
+    padding: 200px 0;
 }
 
 .precedence-list {
@@ -64,12 +68,6 @@ h1 {
 
 .precedence {
     padding-top: 94px;
-}
-
-.precedence h2 {
-    color: var(--primary-white-color);
-    height: 0;
-    width: 0px;
 }
 
 .precedence h3 {
@@ -88,6 +86,21 @@ h1 {
     margin-bottom: 0;
 }
 
+.precedence-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.background-icon {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
 .works {
     padding: 94px 0;
 }
@@ -95,12 +108,12 @@ h1 {
 .work-examples {
     display: flex;
     justify-content: space-between;
-    
+    margin-left: -30px;
 }
 
 .work-examples .item {
     width: 370px;
-    margin-right: 30px;
+    margin-left: 30px;
     
 }
 
@@ -116,27 +129,12 @@ h1 {
 .team-list {
     display: flex;
     justify-content: center;
+    margin-left: -30px;
 }
 
 .team-list .item {
-    margin-right: 30px;
+    margin-left: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.team-list .item:last-child {
-    margin-right: 0;
-}
-
-.socials {
-    display: flex;
-    justify-content: center;
-    margin-right: 10px;
-    text-decoration: none;
-}
-
-.socials:hover,
-.socials:focus {
-    background-color: var(--accent-color);
 }
 
 .our-team {
@@ -177,4 +175,58 @@ h1 {
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-left: 22px;
+    margin-right: 32px; 
+}
+
+.social-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+}
+
+.social-frame:hover {
+    background-color: var(--accent-color);
+}
+
+.social-frame {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 11px 11px;
+    margin-right: 10px;    
+}
+
+.clients {
+    padding: 94px 0;
+}
+
+.clients h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    margin-left: -30px;
+}
+
+.clients-list .item {
+    width: 170px;
+    height: 90px;
+    margin-left: 30px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+   
 }

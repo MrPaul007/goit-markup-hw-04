@@ -50,7 +50,19 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
+    padding: 0 15px;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
 
 /* ===================== HEADER ===================== */
 
@@ -119,6 +131,13 @@ body {
     justify-content: space-between;
 }
 
+.address-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;  
+  fill: #757575;
+}
+
 .address {
     display: flex;
     margin-left: -50px;
@@ -132,6 +151,7 @@ body {
     text-decoration: none;
     font-style: normal;
     margin-left: 50px;
+    display: inline-flex;
 }
 
 h2, h3 {
@@ -161,6 +181,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+    display: flex;
 }
 
 .footer-address {
@@ -194,6 +215,32 @@ footer {
     word-spacing: -1ch;
 }
 
+.footer-link {
+    margin-left: 70px;
+}
+
+.footer-link .social-frame {
+    background-color: ;
+}
+
+.footer-link h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    color: var(--primary-white-color);
+}
+
+.footer-socials {
+    display: flex;
+    
+}
+
+.footer-socials .social-frame {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
 .curent {
     color: var(--accent-color);
 }
@@ -203,3 +250,4 @@ footer {
     margin: 0;
     list-style: none;
 }
+
