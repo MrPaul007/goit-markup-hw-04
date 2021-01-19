@@ -192,22 +192,23 @@ h1 {
     fill: var(--icon-color);
     }
 
-.socials .item:hover,
-.socials .item:focus {
+.social-frame:hover,
+.social-frame:focus {
     background-color: var(--accent-color);
 }
 
-.socials .item:hover .social-icon {
+.social-frame:hover svg,
+.social-frame:focus svg {
     fill: var(--primary-white-color);
 }
 
-.socials .item {
+.social-frame {
     display: block;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     padding: 11px 11px;
-    margin-right: 10px;    
+    margin-right: 10px; 
 }
 
 .socials .social-frame {
@@ -233,11 +234,7 @@ h1 {
 }
 
 .clients-list .item {
-    width: 170px;
-    height: 90px;
-    margin-left: 30px;
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;  
+      
 }
 
 .clients-icon {
@@ -246,19 +243,24 @@ h1 {
 }
 
 .social-link {
-    width: 170px;
-    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 170px;
+    height: 90px;
+    margin-left: 30px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
 }
 
-.social-link:hover svg {
+.social-link:hover svg,
+.social-link:focus svg {
     fill: var(--accent-color);
 }
 
-.clients-list .item:hover,
-.clients-list .item:focus {
+.social-link:hover,
+.social-link:focus {
     border-color: var(--accent-color);
+    
 }
 

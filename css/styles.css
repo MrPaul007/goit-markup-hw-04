@@ -238,7 +238,7 @@ footer {
     
 }
 
-.footer-socials .social-frame-footer {
+.social-frame-link {
     display: block;
     width: 44px;
     height: 44px;
@@ -248,9 +248,9 @@ footer {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.social-frame-footer:hover,
-.social-frame-footer:focus {
-        background-color: var(--accent-color);
+.social-frame-link:hover,
+.social-frame-link:focus {
+    background-color: var(--accent-color);
 }
 
 .social-frame-link .social-icon {
