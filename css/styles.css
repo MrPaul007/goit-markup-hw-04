@@ -165,12 +165,14 @@ h2, h3 {
 a:hover,
 a:focus {
     color: var(--accent-color);
+    outline: none;
 }
 
 button:hover,
 button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    outline: none;
 }
 
 footer {
@@ -251,6 +253,7 @@ footer {
 .social-frame-link:hover,
 .social-frame-link:focus {
     background-color: var(--accent-color);
+    outline: none;
 }
 
 .social-frame-link .social-icon {

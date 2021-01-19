@@ -42,6 +42,7 @@ h1 {
     color: var(--accent-color);
     background-color: var(--primary-white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    outline: none;
 }   
 
 .hero {
@@ -195,6 +196,7 @@ h1 {
 .social-frame:hover,
 .social-frame:focus {
     background-color: var(--accent-color);
+    outline: none;
 }
 
 .social-frame:hover svg,
@@ -261,6 +263,7 @@ h1 {
 .social-link:hover,
 .social-link:focus {
     border-color: var(--accent-color);
+    outline: none;
     
 }
 
