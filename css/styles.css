@@ -154,7 +154,8 @@ body {
     display: inline-flex;
 }
 
-.address-item:hover svg {
+.address-item:hover svg,
+.address-item:focus svg {
     fill: var(--accent-color);
 }
 
@@ -165,14 +166,13 @@ h2, h3 {
 a:hover,
 a:focus {
     color: var(--accent-color);
-    outline: none;
 }
 
 button:hover,
 button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-    outline: none;
+    
 }
 
 footer {
@@ -245,7 +245,7 @@ footer {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    padding: 11px 11px;
+    padding: 12px 12px;
     margin-right: 10px; 
     background: rgba(255, 255, 255, 0.1);
 }
@@ -253,7 +253,7 @@ footer {
 .social-frame-link:hover,
 .social-frame-link:focus {
     background-color: var(--accent-color);
-    outline: none;
+    
 }
 
 .social-frame-link .social-icon {
